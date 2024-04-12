@@ -1,4 +1,4 @@
-module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:15.5' = {
+module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.3' = {
   name: 'flexibleServerDeployment'
   params: {
     // Required parameters
