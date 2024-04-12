@@ -15,9 +15,5 @@ resource pgResourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
 module pg 'pg.bicep' = {
   scope: pgResourceGroup
   name: '${uniqueString(deployment().name, location)}-core'
-  params: {
-    location: location
-    identifier: identifier
-  }
 }
 
