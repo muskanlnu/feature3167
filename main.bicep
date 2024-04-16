@@ -6,13 +6,13 @@ module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.
     skuName: 'Standard_D2s_v3'
     tier: 'GeneralPurpose'
     // Non-required parameters
-    administrators: [
-      {
-        objectId: '<objectId>'
-        principalName: '<principalName>'
-        principalType: 'ServicePrincipal'
-      }
-    ]
+    // administrators: [
+    //   {
+    //     objectId: '<objectId>'
+    //     principalName: '<principalName>'
+    //     principalType: 'ServicePrincipal'
+    //   }
+    // ]
     availabilityZone: '1'
     backupRetentionDays: 20
     configurations: [
@@ -71,7 +71,7 @@ module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.
     ]
     geoRedundantBackup: 'Disabled'
     highAvailability: 'SameZone'
-    location: '<location>'
+    location: 'eastus'
     // managedIdentities: {
     //   userAssignedResourceIds: [
     //     '<managedIdentityResourceId>'
