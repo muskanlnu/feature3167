@@ -4,7 +4,7 @@
   "parameters": {
  
     "name": {
-      "value": "dfpsfsp001"
+      "value": "backstage-postgresql-poc"
     },
     "skuName": {
       "value": "Standard_D2s_v3"
@@ -39,24 +39,9 @@
         }
       ]
     },
-    "diagnosticSettings": {
-      "value": [
-        {
-          "eventHubAuthorizationRuleResourceId": "<eventHubAuthorizationRuleResourceId>",
-          "eventHubName": "<eventHubName>",
-          "metricCategories": [
-            {
-              "category": "AllMetrics"
-            }
-          ],
-          "name": "customSetting",
-          "storageAccountResourceId": "<storageAccountResourceId>",
-          "workspaceResourceId": "<workspaceResourceId>"
-        }
-      ]
-    },
+   
     "enableTelemetry": {
-      "value": "<enableTelemetry>"
+      "value": false
     },
     "firewallRules": {
       "value": [
@@ -84,14 +69,7 @@
       "value": "SameZone"
     },
     "location": {
-      "value": "<location>"
-    },
-    "managedIdentities": {
-      "value": {
-        "userAssignedResourceIds": [
-          "<managedIdentityResourceId>"
-        ]
-      }
+      "value": "eastus"
     },
     "storageSizeGB": {
       "value": 1024

@@ -1,5 +1,5 @@
 module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.3' = {
-  name: 'backstage-postgresql'
+  name: 'backstage-postgresql-poc'
   params: {
     // Required parameters
     name: 'backstage-postgresql-poc'
@@ -37,20 +37,20 @@ module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.
         name: 'db2'
       }
     ]
-    diagnosticSettings: [
-      {
-        eventHubAuthorizationRuleResourceId: '<eventHubAuthorizationRuleResourceId>'
-        eventHubName: '<eventHubName>'
-        metricCategories: [
-          {
-            category: 'AllMetrics'
-          }
-        ]
-        name: 'customSetting'
-        storageAccountResourceId: '<storageAccountResourceId>'
-        workspaceResourceId: '<workspaceResourceId>'
-      }
-    ]
+    // diagnosticSettings: [
+    //   {
+    //     eventHubAuthorizationRuleResourceId: '<eventHubAuthorizationRuleResourceId>'
+    //     eventHubName: '<eventHubName>'
+    //     metricCategories: [
+    //       {
+    //         category: 'AllMetrics'
+    //       }
+    //     ]
+    //     name: 'customSetting'
+    //     storageAccountResourceId: '<storageAccountResourceId>'
+    //     workspaceResourceId: '<workspaceResourceId>'
+    //   }
+    // ]
     enableTelemetry: false
     firewallRules: [
       {
@@ -72,11 +72,11 @@ module flexibleServer 'br/public:avm/res/db-for-postgre-sql/flexible-server:0.1.
     geoRedundantBackup: 'Disabled'
     highAvailability: 'SameZone'
     location: '<location>'
-    managedIdentities: {
-      userAssignedResourceIds: [
-        '<managedIdentityResourceId>'
-      ]
-    }
+    // managedIdentities: {
+    //   userAssignedResourceIds: [
+    //     '<managedIdentityResourceId>'
+    //   ]
+    // }
     storageSizeGB: 1024
     tags: {
       Environment: 'Non-Prod'
